@@ -13,8 +13,8 @@ features <- read.table("features.txt")[,2]
 meanOrStd <- grep("mean|std", features)
 
 mergedData <- mergedData[, c(1, 2, meanOrStd + 2)]
-colnames(mergedData) <- c('Subject', 'Label', as.character(features[meanOrStd]))
 
+colnames(mergedData) <- c('Subject', 'Label', as.character(features[meanOrStd]))
 activityLabels <- as.character(read.table("activity_labels.txt")[,2])
 for (i in 1:6){
   mergedData$Label = sub(i, activityLabels[i], mergedData$Label, )
@@ -22,7 +22,6 @@ for (i in 1:6){
 
 newDataSet <- c()
 labels <- c()
-
 for (subject in 1:30) {
   for (label in activityLabels) {
     means <- sapply(mergedData[mergedData$Subject == subject & mergedData$Label == label, ], mean)
@@ -30,7 +29,6 @@ for (subject in 1:30) {
     labels <- c(labels, label)
   }
 }
-
 newDataSet <- data.frame(newDataSet)
 newDataSet$Label <- labels
 
