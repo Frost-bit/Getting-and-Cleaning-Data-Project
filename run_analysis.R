@@ -31,5 +31,4 @@ for (subject in 1:30) {
 }
 newDataSet <- data.frame(newDataSet)
 newDataSet$Label <- labels
-
 write.table(newDataSet, "newDataSet.txt", row.names = FALSE)
