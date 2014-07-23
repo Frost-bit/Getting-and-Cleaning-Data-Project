@@ -1,9 +1,10 @@
 ### Variables' Description
-**Subject:**
+		**Subject:**
 A number from 1 to 30, indicating the number of the volunteer the experiments were carried with.
 
-**Label:**
+		**Label:**
 The activity that the subject performed while wearing a smartphone (Samsung Galaxy S II) on the waist. 
+
 Can be any of the following:
 1 WALKING
 2 WALKING_UPSTAIRS
@@ -12,15 +13,14 @@ Can be any of the following:
 5 STANDING
 6 LAYING
 		
-**Others:**
+		**Others:**
 In Hz. The features come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. The prefix t 
 (-t) indicate that they are time domain signals and the f (-f) is for frequency domain signals. Subsequently, the body 
 linear acceleration and angular velocity were derived in time to obtain Jerk signals (jerk) and the magnitude of these 
-three-dimensional signals were calculated using the Euclidean norm (mag). Finally '-XYZ' is used to denote 3-axial signals 
+three-dimensional signals were calculated using the Euclidean norm (mag). Finally '-XYZ' is used to denote 3-axial signals
 in the X, Y and Z directions.
 
 We end up with:
-
 tBodyAcc-XYZ
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
@@ -40,7 +40,6 @@ fBodyGyroMag
 fBodyGyroJerkMag
 
 Because we had to choose the variables that referred to the means or standard deviation of the measures, we left: 
-
 mean(): Mean value
 std(): Standard deviation
 
