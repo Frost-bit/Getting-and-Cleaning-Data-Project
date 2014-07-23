@@ -1,8 +1,8 @@
 ### Variables' Description
-		**Subject:**
+**Subject:**
 A number from 1 to 30, indicating the number of the volunteer the experiments were carried with.
 
-		**Label:**
+**Label:**
 The activity that the subject performed while wearing a smartphone (Samsung Galaxy S II) on the waist. 
 Can be any of the following:
 1 WALKING
@@ -12,7 +12,7 @@ Can be any of the following:
 5 STANDING
 6 LAYING
 		
-		**Others:**
+**Others:**
 In Hz. The features come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. The prefix t 
 (-t) indicate that they are time domain signals and the f (-f) is for frequency domain signals. Subsequently, the body 
 linear acceleration and angular velocity were derived in time to obtain Jerk signals (jerk) and the magnitude of these 
