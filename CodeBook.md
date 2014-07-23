@@ -45,8 +45,9 @@ std(): Standard deviation
 
 ### Major Transformations
 - Created a big data set containing the subject, activity label and variables' measures for both the training and the
-test data.
-- Leave only the variables that referred to the mean or the standar deviation of a measure.
+test data (used read.txt, rbind, and cbind)
+- Leave only the variables that referred to the mean or the standard deviation of a measure (used subsetting techinques).
 - Change the variables' and activity labels' names. I chose the names that the  downloaded dataset used so that it
-was clear what it meant.
-- Calculate the average of each variable for each activity and each subject and put each row into a new data frame. 
+was clear what they meant (used colnames and a for loop)
+- Calculate the average of each variable for each activity and each subject and put each row into a new data frame (used
+sapply, rbind and a for loop).
