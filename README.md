@@ -1,5 +1,5 @@
-GettingandCleaningData-CourseProject
-====================================
+Getting and Cleaning Data - Course Project
+=========================================
 Each step here describes a paragraph of code in the run_analysis.R file.
 
 1. The script starts by loading into R the six fundamental datasets. It assumes that the working directory is the "UCI HAR Dataset" folder. It reads each file and saves it into a data frame.
